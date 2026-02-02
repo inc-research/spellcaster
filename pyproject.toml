@@ -1,0 +1,17 @@
+[project]
+name = "spellcaster-lcx-index"
+version = "0.1.0"
+description = "Language complexity and flow analysis utilities."
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+  "numpy",
+  "python-Levenshtein",
+]
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = ["spellcaster_lcx_index"]
