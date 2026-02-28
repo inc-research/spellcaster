@@ -1,0 +1,60 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "spellcaster"
+version = "0.1.0"
+description = "Analyze natural language through complex systems science, information theory, and evolutionary game theory."
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+authors = [
+    {name = "Spellcaster Contributors"},
+]
+keywords = [
+    "nlp",
+    "information-theory",
+    "complex-systems",
+    "text-analysis",
+    "evolutionary-game-theory",
+    "linguistics",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+    "Topic :: Text Processing :: Linguistic",
+]
+dependencies = [
+    "numpy>=1.23",
+    "pandas>=1.5",
+    "spacy>=3.4",
+    "scipy>=1.9",
+    "python-Levenshtein>=0.20",
+]
+
+[project.optional-dependencies]
+viz = ["matplotlib>=3.5", "seaborn>=0.12"]
+graphs = ["networkx>=3.0"]
+ml = ["sentence-transformers>=2.0", "scikit-learn>=1.0"]
+all = ["spellcaster[viz,graphs,ml]"]
+dev = ["pytest>=7.0", "spellcaster[all]"]
+
+[project.urls]
+Homepage = "https://github.com/spellcaster/spellcaster"
+Documentation = "https://github.com/spellcaster/spellcaster#readme"
+Repository = "https://github.com/spellcaster/spellcaster"
+
+[tool.setuptools.packages.find]
+include = ["spellcaster*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
