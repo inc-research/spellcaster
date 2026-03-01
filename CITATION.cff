@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+title: "Spellcaster: Linguistic Analysis through Complex Systems Science and Information Theory"
+message: "If you use this software in your research, please cite it as below."
+type: software
+authors:
+  - family-names: Carleton
+    given-names: Ian
+    orcid: "https://orcid.org/0009-0000-5071-0367"
+repository-code: "https://github.com/inc-research/spellcaster"
+license: MIT
+version: 0.1.0
+date-released: "2026-03-01"
+keywords:
+  - natural language processing
+  - information theory
+  - complex systems
+  - text analysis
+  - evolutionary game theory
+  - computational linguistics
+  - Shannon entropy
+  - normalized compression distance
+abstract: >-
+  Spellcaster is a Python library for analyzing natural language text
+  through complex systems science, information theory,
+  information-theoretic physics analogues, and evolutionary game theory.
+  It provides four complementary analyzers: TextComplexityAnalyzer (LCX)
+  for compression-based complexity flow, ValenceModelAnalyzer (LCVM) for
+  multidimensional linguistic valence profiling, AdaptiveEvolutionAnalyzer
+  (APE) for syntactic species dynamics across document revisions, and
+  KeywordERPAnalyzer (KEPM) for keyword structural coherence via spectral
+  entropy and entanglement detection.
